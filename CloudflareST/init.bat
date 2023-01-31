@@ -1,7 +1,7 @@
 @echo off
 
-call link-file hosts "%~dp0data" "%windir%\System32\drivers\etc"
-call link-file nowip_hosts.txt "%~dp0data" "%~dp0app"
+call link-file "%~dp0data" "%windir%\System32\drivers\etc" hosts
+call link-file "%~dp0data" "%~dp0app" nowip_hosts.txt
 
 set SCHTASKS_NAME=CloudflareST
 
