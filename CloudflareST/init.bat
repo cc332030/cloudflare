@@ -1,6 +1,6 @@
 @echo off
 
-call link-file "%~dp0data" "%windir%\System32\drivers\etc" hosts
+call link-file "%~dp0data" "%windir%\System32\drivers\etc" hosts.txt hosts
 
 call link-file "%~dp0data" "%~dp0app" nowip_hosts.txt
 call link-file "%~dp0data" "%~dp0app" result_hosts.txt
