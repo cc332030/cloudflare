@@ -1,0 +1,8 @@
+
+= email-worker
+
+[source,shell]
+----
+npm i wrangler -g
+wrangler tail c332030-email-worker
+----
