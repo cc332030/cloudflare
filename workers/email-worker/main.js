@@ -5,7 +5,6 @@ export default {
   async email(message, env, ctx) {
 
     const addresses = [
-      'c332030@qq.com',
       'c332030@gmail.com',
       'c332030@msn.cn'
     ]
