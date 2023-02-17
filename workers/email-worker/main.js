@@ -6,7 +6,8 @@ export default {
 
     const addresses = [
       'c332030@gmail.com',
-      'c332030@msn.cn'
+      'c332030@msn.cn',
+      'c332030@yahoo.com'
     ]
 
     const toAddress = message.headers.get("to")
