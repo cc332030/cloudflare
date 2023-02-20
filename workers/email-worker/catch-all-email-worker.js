@@ -1,6 +1,5 @@
 
-
-// wrangler tail c332030-email-worker
+// wrangler tail catch-all-email-worker
 export default {
   async email(message, env, ctx) {
 
