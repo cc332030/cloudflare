@@ -11,12 +11,21 @@ export default {
 
     const toAddress = message.headers.get("to")
 
+    const errors = [];
+
     for(const address of addresses) {
       if(address !== toAddress) {
         try {
           await message.forward(address)
-        } catch(e) {}
+        } catch(e) {
+          errors.push(e);
+        }
       }
     }
+
+    if(errors.length > 0) {
+      throw errors.slice(0, 1);
+    }
+
   }
 }
