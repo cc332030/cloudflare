@@ -13,7 +13,9 @@ export default {
 
     for(const address of addresses) {
       if(address !== toAddress) {
-        await message.forward(address)
+        try {
+          await message.forward(address)
+        } catch(e) {}
       }
     }
   }
