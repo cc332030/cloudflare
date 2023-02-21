@@ -1,0 +1,16 @@
+
+= wrangler
+
+[source,shell]
+----
+npm install -g wrangler
+
+wrangler login
+
+wrangler init <YOUR_WORKER>
+
+cd <YOUR_WORKER>
+
+wrangler dev
+
+----
