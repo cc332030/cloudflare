@@ -14,9 +14,7 @@ export default {
       if(address !== toAddress) {
         try {
           await message.forward(address)
-        } catch(e) {
-          console.error(e)
-        }
+        } catch(e) {}
       }
     }
 
