@@ -1,0 +1,7 @@
+
+= trace
+
+[source,shell]
+----
+curl -v https://proxy-cdn.c332030.com/cdn-cgi/trace
+----
